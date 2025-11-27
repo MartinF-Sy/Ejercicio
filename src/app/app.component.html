@@ -1,0 +1,198 @@
+<!-- ========================================= -->
+<!--  PÁGINA DE PRUEBA - TODOS LOS ELEMENTOS   -->
+<!-- ========================================= -->
+
+<div>
+  <h1>Demostración de Elementos HTML</h1>
+  <p>Este proyecto muestra una gran variedad de elementos HTML simples, compatibles con Angular.</p>
+</div>
+
+<!-- ------------ BOTONES -------------------- -->
+<section>
+  <h2>Botones</h2>
+  <button>No toques</button>
+  <button>Enviar</button>
+  <button disabled>Deshabilitado</button>
+</section>
+
+<!-- ------------ INPUTS --------------------- -->
+<section>
+  <h2>Campos de Formulario</h2>
+
+  <label>Texto: <input type="text"></label><br>
+  <label>Número: <input type="number"></label><br>
+  <label>Email: <input type="email"></label><br>
+  <label>Contraseña: <input type="password"></label><br>
+  <label>Color: <input type="color"></label><br>
+  <label>Rango: <input type="range"></label><br>
+  <label>Fecha: <input type="date"></label><br>
+  <label>Archivo: <input type="file"></label><br>
+
+  <label>
+    Selección:
+    <select>
+      <option>Opción A</option>
+      <option>Opción B</option>
+      <option>Opción C</option>
+    </select>
+  </label>
+</section>
+
+<!-- ------------ CHECKBOX/RADIO ---------------- -->
+<section>
+  <h2>Opciones</h2>
+  <label><input type="checkbox"> Acepto términos</label><br>
+  <label><input type="checkbox"> Suscribirme</label><br>
+  <label><input type="radio" name="grupo1"> Opción 1</label><br>
+  <label><input type="radio" name="grupo1"> Opción 2</label>
+</section>
+
+<!-- ------------ LISTAS ----------------------- -->
+<section>
+  <h2>Listas</h2>
+
+  <h3>Lista ordenada</h3>
+  <ol>
+    <li>Primero</li>
+    <li>Segundo</li>
+    <li>Tercero</li>
+  </ol>
+
+  <h3>Lista desordenada</h3>
+  <ul>
+    <li>Elemento A</li>
+    <li>Elemento B</li>
+    <li>Elemento C</li>
+  </ul>
+
+  <h3>Lista de definiciones</h3>
+  <dl>
+    <dt>HTML</dt>
+    <dd>Lenguaje de marcado para la web.</dd>
+    <dt>CSS</dt>
+    <dd>Lenguaje de estilos.</dd>
+  </dl>
+</section>
+
+<!-- ------------ TABLAS ------------------------ -->
+<section>
+  <h2>Tabla</h2>
+  <table border="1">
+    <tr>
+      <th>Nombre</th>
+      <th>Edad</th>
+    </tr>
+    <tr>
+      <td>Juan</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Ana</td>
+      <td>25</td>
+    </tr>
+  </table>
+</section>
+
+<!-- ------------ MULTIMEDIA -------------------- -->
+<section>
+  <h2>Multimedia</h2>
+
+  <p>Imagen:</p>
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.fnTbYBi_tmG3s9nY9tQmnAHaEc%3Fpid%3DApi&f=1&ipt=adb311a3cc67c7aefd5980158bb247981f7244bd14423dd86fb99d222c300a6a" alt="Imagen de ejemplo">
+
+  <p>Audio:</p>
+  <audio controls>
+    <source src="assets/audio/onichan-te-buscan.mp3" type="audio/mpeg">
+  </audio>
+
+  <p>Video:</p>
+  <video width="320" height="240" controls>
+    <source src="sample-video.mp4" type="video/mp4">
+  </video>
+</section>
+
+<!-- ------------ TEXTO SEMÁNTICO ---------------- -->
+<section>
+  <h2>Texto Semántico</h2>
+  <p><strong>Negrita</strong></p>
+  <p><em>Cursiva</em></p>
+  <p><u>Subrayado</u></p>
+  <p><mark>Texto marcado</mark></p>
+  <p><small>Texto pequeño</small></p>
+  <p><code>console.log("Hola")</code></p>
+  <pre>
+Esto es un bloque preformateado
+    con espacios    y saltos
+  </pre>
+</section>
+
+<!-- ------------ ENLACES ------------------------ -->
+<section>
+  <h2>Enlaces</h2>
+  <a href="https://google.com" target="_blank">Ir a Google</a><br>
+  <a href="https://www.youtube.com/watch?v=oGOtSrv5xdE&t=10s" target="_blank">temon</a>
+</section>
+
+<!-- ------------ IFRAME ------------------------- -->
+<section>
+  <h2>Iframe</h2>
+  <iframe
+    src="https://www.example.com"
+    width="300"
+    height="200">
+  </iframe>
+</section>
+
+<!-- ------------ SVG ---------------------------- -->
+<section>
+  <h2>SVG</h2>
+  <svg width="150" height="150">
+    <circle cx="75" cy="75" r="50" stroke="black" stroke-width="3" fill="lightblue"/>
+  </svg>
+</section>
+
+<!-- ------------ DETALLES ----------------------- -->
+<section>
+  <h2>Detalles desplegables</h2>
+  <details>
+    <summary>Haz clic para expandir</summary>
+    <p>Contenido oculto.</p>
+  </details>
+</section>
+
+<!-- ------------ DIRECCIÓN ---------------------- -->
+<section>
+  <h2>Dirección</h2>
+  <address>
+    Autor: Juan Pérez<br>
+    Email: contacto&#64;example.com
+  </address>
+</section>
+
+<!-- ------------ FIGURE ------------------------- -->
+<section>
+  <h2>Figure</h2>
+  <figure>
+    <img src="https://via.placeholder.com/200" alt="Imagen">
+    <figcaption>Ejemplo de figcaption</figcaption>
+  </figure>
+</section>
+
+<!-- ------------ PROGRESS ----------------------- -->
+<section>
+  <h2>Barra de Progreso</h2>
+  <progress value="50" max="100"></progress>
+</section>
+
+<!-- ------------ METER -------------------------- -->
+<section>
+  <h2>Medidor</h2>
+  <meter min="0" max="10" value="7">7/10</meter>
+</section>
+
+<!-- ------------ HR ----------------------------- -->
+<hr>
+
+<footer>
+  <p>Fin del documento de prueba.</p>
+</footer>
