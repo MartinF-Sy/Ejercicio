@@ -1,152 +1,175 @@
-/* === ESTILO GLOBAL === */
-body {
-  font-family: 'Comic Neue', 'Poppins', sans-serif;
-  margin: 0;
-  padding: 20px;
-  background: #000000;
-  color: #000000;
-  line-height: 1.6;
-}
+/* ------------------------------
+   FUENTES
+------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
-/* === TITULOS === */
-h1 {
-  font-size: 3rem;
-  color: #9a4dff;
-  text-shadow: 3px 3px 0 #000, -3px -3px 0 #0ff;
-  font-family: 'Bangers', cursive;
-  margin-bottom: 20px;
+/* ------------------------------
+   TITULARES METALEROS
+------------------------------ */
+h2, h3 {
+  font-family: 'Metal Mania', cursive;
+  color: #c828ff;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #000;
+  margin-top: 0;
 }
 
 h2 {
-  font-size: 2.2rem;
-  color: #7f2aff;
-  text-shadow: 2px 2px 0 #000, -2px -2px 0 #06d7d9;
-  font-family: 'Bangers', cursive;
+  font-size: 2.3rem;
 }
 
 h3 {
-  font-size: 1.6rem;
-  color: #b27dff;
-  text-shadow: 2px 2px 0 #000;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
-/* === PÁRRAFOS === */
-p {
-  font-size: 1.1rem;
-  color: #d6d6ff;
-}
-
-/* === SECCIONES === */
+/* ------------------------------
+   DIV / SECCIONES / CARDS
+------------------------------ */
 section {
-  background: #11111a;
-  border: 2px solid #7f2aff;
+  background: rgba(25, 0, 37, 0.5);
+  border: 3px solid #4800a8;
+  border-radius: 18px;
   padding: 20px;
-  border-radius: 14px;
-  margin-bottom: 25px;
-  box-shadow: 0 0 15px #7f2aff55, 0 0 25px #06d7d955 inset;
+  margin-bottom: 20px;
+  box-shadow: 6px 6px 0 #000;
+  color: #ffffff;
 }
 
-/* === LISTAS === */
-ul, ol {
-  padding-left: 22px;
-}
-
-li {
-  margin: 6px 0;
-  color: #c2aaff;
-}
-
-/* === ENLACES === */
-a {
-  color: #06d7d9;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  color: #9a4dff;
-  text-shadow: 0 0 10px #06d7d9;
-}
-
-/* === TABLAS === */
-table {
+/* ------------------------------
+   INPUTS NORMALES (text, email, etc.)
+------------------------------ */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="color"],
+input[type="file"],
+select,
+textarea {
+  background: #15001f;
+  border: 3px solid #6100b8;
+  border-radius: 12px;
+  color: #c2c6ff;
+  padding: 10px;
+  font-size: 14px;
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-  background: #0f0f19;
-  border: 2px solid #7f2aff;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: inset 3px 3px 0 #000;
+  box-sizing: border-box;
+  margin-bottom: 15px;
 }
 
-th, td {
-  padding: 12px;
-  border: 1px solid #9a4dff;
-}
-
-th {
-  background: #7f2aff33;
-  color: #c2aaff;
-}
-
-td {
-  color: #eaeaff;
-}
-
-/* === MULTIMEDIA === */
-img, video, audio {
-  width: 100%;
-  border-radius: 10px;
-  border: 3px solid #7f2aff;
-  box-shadow: 0 0 12px #7f2aff88;
-  margin-top: 10px;
-}
-
-/* === BOTONES BURBUJA (Mejorados, estilo cómic gótico) === */
-button, .btn {
-  font-size: 1.2rem;
-  padding: 14px 28px;
-  border: none;
-  cursor: pointer;
-  border-radius: 50px;
-  background: radial-gradient(circle at 30% 30%, #7f2aff, #1a002b);
-  color: #eaeaff;
-  font-weight: bold;
-  box-shadow: 0 0 15px #7f2affaa, 0 0 25px #06d7d955 inset;
-  transition: transform 0.15s ease, box-shadow 0.2s ease;
-}
-
-button:hover, .btn:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 0 25px #9a4dff, 0 0 35px #06d7d9 inset;
-}
-
-button:active, .btn:active {
-  transform: translateY(1px);
-}
-
-/* === INPUTS, SELECT, TEXTAREA === */
-input, textarea, select {
-  width: 100%;
-  padding: 12px;
-  margin-top: 10px;
-  border-radius: 10px;
-  background: #0f0f19;
-  border: 2px solid #06d7d9;
-  color: #eaeaff;
-  font-size: 1rem;
-  box-shadow: 0 0 8px #06d7d955 inset;
-}
-
-input:focus, textarea:focus, select:focus {
+input:focus,
+select:focus,
+textarea:focus {
   outline: none;
-  border-color: #9a4dff;
-  box-shadow: 0 0 10px #9a4dff;
+  border-color: #00d0ff;
+  box-shadow: 0 0 10px #00d0ff;
+  color: #ffffff;
 }
 
-/* === FOOTER === */
-footer {
-  text-align: center;
-  color: #8888ff;
-  padding: 20px;
-  margin-top: 40px;
-  border-top: 2px solid #7f2aff;
+/* Labels de formulario (para inputs normales) */
+label[for] {
+  display: block;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+/* ------------------------------
+   INPUT TIPO RANGE (SLIDER)
+------------------------------ */
+input[type="range"] {
+  width: 100%;
+  margin-bottom: 15px;
+  height: 8px;
+  background: linear-gradient(90deg, #00d0ff, #c828ff);
+  border-radius: 5px;
+  outline: none;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #00eaff;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #000;
+  box-shadow: 0 0 5px #c828ff;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #00eaff;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #000;
+  box-shadow: 0 0 5px #c828ff;
+}
+
+/* ------------------------------
+   CHECKBOX Y RADIO - FORMATO CAJA
+------------------------------ */
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto !important;
+  margin-right: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+  accent-color: #c828ff;
+}
+
+/* Labels que contienen checkbox/radio */
+label:not([for]) {
+  display: block;
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.05rem;
+  background: #15001f;
+  border: 3px solid #6100b8;
+  border-radius: 12px;
+  padding: 12px 15px;
+  box-shadow: inset 3px 3px 0 #000;
+  transition: border-color 0.2s ease;
+}
+
+label:not([for]):hover {
+  border-color: #00d0ff;
+}
+
+/* Contenedor para organizar los labels verticalmente */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------------------------
+   BOTONES
+------------------------------ */
+button {
+  background: linear-gradient(180deg, #8400ff, #48008f);
+  border: 4px solid #000;
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #d2eaff;
+  cursor: pointer;
+  box-shadow: 6px 6px 0 #00e0ff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-4px);
+  box-shadow: 10px 10px 0 #00e0ff;
 }
