@@ -1,199 +1,467 @@
 <!-- ========================================= -->
-<!--  PÁGINA DE PRUEBA - TODOS LOS ELEMENTOS   -->
+<!--  PÁGINA DE DEMOSTRACIÓN HTML - ANGULAR    -->
 <!-- ========================================= -->
 
-<h1>martin se la come</h1>
-<div>
-  <h1>Demostración de Elementos HTML</h1>
-  <p>Este proyecto muestra una gran variedad de elementos HTML simples, compatibles con Angular.</p>
-</div>
+<!-- ========================================= -->
+<!--  ENCABEZADO PRINCIPAL                     -->
+<!-- ========================================= -->
+<header>
+  <!-- Título principal de la página -->
+  <h1>Demostración Completa de Elementos HTML</h1>
+  <!-- Descripción introductoria -->
+  <p style="text-align: center;">Este proyecto muestra una gran variedad de elementos HTML compatibles con Angular para proyectos de práctica.</p>
+</header>
 
-<!-- ------------ BOTONES -------------------- -->
+<!-- ========================================= -->
+<!--  SECCIÓN: BOTONES                         -->
+<!-- ========================================= -->
 <section>
+  <!-- Título de la sección -->
   <h2>Botones</h2>
-  <button>No toques</button>
-  <button>Enviar</button>
-  <button disabled>Deshabilitado</button>
+  <!-- Botón estándar -->
+  <button type="button">Botón Normal</button>
+  <!-- Botón de envío (submit) -->
+  <button type="submit">Enviar</button>
+  <!-- Botón deshabilitado -->
+  <button type="button" disabled>Deshabilitado</button>
+  <!-- Botón de reinicio -->
+  <button type="reset">Reiniciar</button>
 </section>
 
-<!-- ------------ INPUTS --------------------- -->
+<!-- ========================================= -->
+<!--  SECCIÓN: CAMPOS DE FORMULARIO            -->
+<!-- ========================================= -->
 <section>
+  <!-- Título de la sección -->
   <h2>Campos de Formulario</h2>
-
-  <label>Texto: <input type="text"></label><br>
-  <label>Número: <input type="number"></label><br>
-  <label>Email: <input type="email"></label><br>
-  <label>Contraseña: <input type="password"></label><br>
-  <label>Color: <input type="color"></label><br>
-  <label>Rango: <input type="range"></label><br>
-  <label>Fecha: <input type="date"></label><br>
-  <label>Archivo: <input type="file"></label><br>
-
-  <label>
-    Selección:
-    <select>
-      <option>Opción A</option>
-      <option>Opción B</option>
-      <option>Opción C</option>
-    </select>
-  </label>
+  
+  <!-- Campo de texto simple -->
+  <label for="inputTexto">Texto:</label>
+  <input type="text" id="inputTexto" placeholder="Ingresa texto aquí"><br>
+  
+  <!-- Campo numérico -->
+  <label for="inputNumero">Número:</label>
+  <input type="number" id="inputNumero" min="0" max="100"><br>
+  
+  <!-- Campo de email con validación -->
+  <label for="inputEmail">Email:</label>
+  <input type="email" id="inputEmail" placeholder="ejemplo&#64;correo.com"><br>
+  
+  <!-- Campo de contraseña -->
+  <label for="inputPassword">Contraseña:</label>
+  <input type="password" id="inputPassword"><br>
+  
+  <!-- Selector de color -->
+  <label for="inputColor">Color:</label>
+  <input type="color" id="inputColor"><br>
+  
+  <!-- Control deslizante (rango) -->
+  <label for="inputRange">Rango:</label>
+  <input type="range" id="inputRange" min="0" max="100" value="50"><br>
+  
+  <!-- Selector de fecha -->
+  <label for="inputFecha">Fecha:</label>
+  <input type="date" id="inputFecha"><br>
+  
+  <!-- Campo de hora -->
+  <label for="inputHora">Hora:</label>
+  <input type="time" id="inputHora"><br>
+  
+  <!-- Campo de fecha y hora -->
+  <label for="inputDateTime">Fecha y Hora:</label>
+  <input type="datetime-local" id="inputDateTime"><br>
+  
+  <!-- Selector de archivos -->
+  <label for="inputFile">Archivo:</label>
+  <input type="file" id="inputFile"><br>
+  
+  <!-- Campo de búsqueda -->
+  <label for="inputSearch">Búsqueda:</label>
+  <input type="search" id="inputSearch" placeholder="Buscar..."><br>
+  
+  <!-- Campo de URL -->
+  <label for="inputUrl">URL:</label>
+  <input type="url" id="inputUrl" placeholder="https://ejemplo.com"><br>
+  
+  <!-- Campo de teléfono -->
+  <label for="inputTel">Teléfono:</label>
+  <input type="tel" id="inputTel" placeholder="+54 11 1234-5678"><br>
+  
+  <!-- Menú desplegable (select) -->
+  <label for="selectOpcion">Selección:</label>
+  <select id="selectOpcion">
+    <option value="">Selecciona una opción</option>
+    <option value="a">Opción A</option>
+    <option value="b">Opción B</option>
+    <option value="c">Opción C</option>
+  </select><br>
+  
+  <!-- Área de texto multilínea -->
+  <label for="textArea">Comentarios:</label><br>
+  <textarea id="textArea" rows="4" cols="50" placeholder="Escribe tus comentarios aquí..."></textarea>
 </section>
 
-<!-- ------------ CHECKBOX/RADIO ---------------- -->
+<!-- ========================================= -->
+<!--  SECCIÓN: OPCIONES (CHECKBOX Y RADIO)     -->
+<!-- ========================================= -->
 <section>
+  <!-- Título de la sección -->
   <h2>Opciones</h2>
-  <label><input type="checkbox"> Acepto términos</label><br>
-  <label><input type="checkbox"> Suscribirme</label><br>
-  <label><input type="radio" name="grupo1"> Opción 1</label><br>
-  <label><input type="radio" name="grupo1"> Opción 2</label>
+  
+  <!-- Subtítulo para checkboxes -->
+  <h3>Casillas de verificación (Checkbox)</h3>
+  <!-- Checkbox 1 -->
+  <label><input type="checkbox" id="check1"> Acepto términos y condiciones</label><br>
+  <!-- Checkbox 2 -->
+  <label><input type="checkbox" id="check2"> Suscribirme al boletín</label><br>
+  <!-- Checkbox 3 deshabilitado -->
+  <label><input type="checkbox" id="check3" disabled> Opción deshabilitada</label><br>
+  
+  <!-- Subtítulo para radio buttons -->
+  <h3>Botones de opción (Radio)</h3>
+  <!-- Radio button grupo 1 -->
+  <label><input type="radio" name="grupo1" value="1" id="radio1"> Opción 1</label><br>
+  <label><input type="radio" name="grupo1" value="2" id="radio2"> Opción 2</label><br>
+  <label><input type="radio" name="grupo1" value="3" id="radio3"> Opción 3</label>
 </section>
 
-<!-- ------------ LISTAS ----------------------- -->
+<!-- ========================================= -->
+<!--  SECCIÓN: LISTAS                          -->
+<!-- ========================================= -->
 <section>
+  <!-- Título de la sección -->
   <h2>Listas</h2>
 
+  <!-- Lista ordenada (numerada) -->
   <h3>Lista ordenada</h3>
   <ol>
-    <li>Primero</li>
-    <li>Segundo</li>
-    <li>Tercero</li>
+    <li>Primer elemento</li>
+    <li>Segundo elemento</li>
+    <li>Tercer elemento</li>
+    <li>Cuarto elemento</li>
   </ol>
 
+  <!-- Lista desordenada (con viñetas) -->
   <h3>Lista desordenada</h3>
   <ul>
     <li>Elemento A</li>
     <li>Elemento B</li>
     <li>Elemento C</li>
+    <li>Elemento D</li>
   </ul>
 
+  <!-- Lista de definiciones (términos y descripciones) -->
   <h3>Lista de definiciones</h3>
   <dl>
     <dt>HTML</dt>
-    <dd>Lenguaje de marcado para la web.</dd>
+    <dd>Lenguaje de marcado para la estructura de páginas web.</dd>
     <dt>CSS</dt>
-    <dd>Lenguaje de estilos.</dd>
+    <dd>Lenguaje de estilos para diseñar páginas web.</dd>
+    <dt>JavaScript</dt>
+    <dd>Lenguaje de programación para interactividad web.</dd>
+    <dt>Angular</dt>
+    <dd>Framework de desarrollo web basado en TypeScript.</dd>
   </dl>
 </section>
 
-<!-- ------------ TABLAS ------------------------ -->
+<!-- ========================================= -->
+<!--  SECCIÓN: TABLAS                          -->
+<!-- ========================================= -->
 <section>
+  <!-- Título de la sección -->
   <h2>Tabla</h2>
+  <!-- Tabla con encabezados y datos -->
   <table border="1">
-    <tr>
-      <th>Nombre</th>
-      <th>Edad</th>
-    </tr>
-    <tr>
-      <td>Juan</td>
-      <td>30</td>
-    </tr>
-    <tr>
-      <td>Ana</td>
-      <td>25</td>
-    </tr>
+    <!-- Encabezado de la tabla -->
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Ciudad</th>
+        <th>Ocupación</th>
+      </tr>
+    </thead>
+    <!-- Cuerpo de la tabla -->
+    <tbody>
+      <tr>
+        <td>Juan Pérez</td>
+        <td>30</td>
+        <td>Buenos Aires</td>
+        <td>Desarrollador</td>
+      </tr>
+      <tr>
+        <td>Ana García</td>
+        <td>25</td>
+        <td>Córdoba</td>
+        <td>Diseñadora</td>
+      </tr>
+      <tr>
+        <td>Carlos López</td>
+        <td>35</td>
+        <td>Rosario</td>
+        <td>Ingeniero</td>
+      </tr>
+    </tbody>
+    <!-- Pie de tabla (opcional) -->
+    <tfoot>
+      <tr>
+        <td colspan="4" style="text-align: center;">Total: 3 personas</td>
+      </tr>
+    </tfoot>
   </table>
 </section>
 
-<!-- ------------ MULTIMEDIA -------------------- -->
+<!-- ========================================= -->
+<!--  SECCIÓN: MULTIMEDIA                      -->
+<!-- ========================================= -->
 <section>
+  <!-- Título de la sección -->
   <h2>Multimedia</h2>
 
-  <p>Imagen:</p>
-  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.fnTbYBi_tmG3s9nY9tQmnAHaEc%3Fpid%3DApi&f=1&ipt=adb311a3cc67c7aefd5980158bb247981f7244bd14423dd86fb99d222c300a6a" alt="Imagen de ejemplo">
+  <!-- Subtítulo para imagen -->
+  <h3>Imagen</h3>
+  <!-- Imagen con atributos alt y title para accesibilidad -->
+  <img src="https://via.placeholder.com/400x200" alt="Imagen de ejemplo" title="Imagen de demostración">
 
-  <p>Audio:</p>
+  <!-- Subtítulo para audio -->
+  <h3>Audio</h3>
+  <!-- Reproductor de audio con controles -->
   <audio controls>
-    <source src="assets/audio/onichan-te-buscan.mp3" type="audio/mpeg">
+    <source src="assets/audio/sample.mp3" type="audio/mpeg">
+    <!-- Mensaje de respaldo si el navegador no soporta audio -->
+    Tu navegador no soporta el elemento de audio.
   </audio>
 
-  <p>Video:</p>
-  <video width="320" height="240" controls>
-    <source src="sample-video.mp4" type="video/mp4">
+  <!-- Subtítulo para video -->
+  <h3>Video</h3>
+  <!-- Reproductor de video con controles -->
+  <video width="400" height="300" controls>
+    <source src="assets/video/sample.mp4" type="video/mp4">
+    <!-- Mensaje de respaldo si el navegador no soporta video -->
+    Tu navegador no soporta el elemento de video.
   </video>
 </section>
 
-<!-- ------------ TEXTO SEMÁNTICO ---------------- -->
+<!-- ========================================= -->
+<!--  SECCIÓN: TEXTO SEMÁNTICO                 -->
+<!-- ========================================= -->
 <section>
+  <!-- Título de la sección -->
   <h2>Texto Semántico</h2>
-  <p><strong>Negrita</strong></p>
-  <p><em>Cursiva</em></p>
-  <p><u>Subrayado</u></p>
-  <p><mark>Texto marcado</mark></p>
-  <p><small>Texto pequeño</small></p>
-  <p><code>console.log("Hola")</code></p>
+  <!-- Texto en negrita (importante) -->
+  <p><strong>Texto en negrita (strong)</strong></p>
+  <!-- Texto en cursiva (énfasis) -->
+  <p><em>Texto en cursiva (em)</em></p>
+  <!-- Texto subrayado -->
+  <p><u>Texto subrayado</u></p>
+  <!-- Texto marcado/resaltado -->
+  <p><mark>Texto marcado o resaltado</mark></p>
+  <!-- Texto pequeño -->
+  <p><small>Texto pequeño (small)</small></p>
+  <!-- Texto tachado -->
+  <p><s>Texto tachado</s> o <del>texto eliminado</del></p>
+  <!-- Texto insertado -->
+  <p><ins>Texto insertado o añadido</ins></p>
+  <!-- Superíndice -->
+  <p>Fórmula: E = mc<sup>2</sup></p>
+  <!-- Subíndice -->
+  <p>Fórmula química: H<sub>2</sub>O</p>
+  <!-- Código inline -->
+  <p>Variable en código: <code>let x = 10;</code></p>
+  <!-- Bloque de código preformateado -->
   <pre>
-Esto es un bloque preformateado
-    con espacios    y saltos
+// Bloque de código preformateado
+function saludar() {{ '{' }}
+  console.log("Hola Mundo");
+{{ '}' }}
   </pre>
+  <!-- Cita en línea -->
+  <p>Como dijo Einstein: <q>La imaginación es más importante que el conocimiento.</q></p>
+  <!-- Bloque de cita -->
+  <blockquote cite="https://ejemplo.com">
+    Este es un bloque de cita que puede contener texto más largo y ser citado de una fuente específica.
+  </blockquote>
+  <!-- Abreviatura -->
+  <p><abbr title="HyperText Markup Language">HTML</abbr> es el lenguaje base de la web.</p>
 </section>
 
-<!-- ------------ ENLACES ------------------------ -->
+<!-- ========================================= -->
+<!--  SECCIÓN: ENLACES                         -->
+<!-- ========================================= -->
 <section>
+  <!-- Título de la sección -->
   <h2>Enlaces</h2>
-  <a href="https://google.com" target="_blank">Ir a Google</a><br>
-  <a href="https://www.youtube.com/watch?v=oGOtSrv5xdE&t=10s" target="_blank">temon</a>
+  <!-- Enlace externo que abre en nueva pestaña -->
+  <p><a href="https://google.com" target="_blank" rel="noopener noreferrer">Ir a Google</a></p>
+  <!-- Enlace con atributo rel para seguridad -->
+  <p><a href="https://github.com" target="_blank" rel="noopener noreferrer">Visitar GitHub</a></p>
+  <!-- Enlace de email -->
+  <p><a href="mailto:contacto&#64;ejemplo.com">Enviar un correo</a></p>
+  <!-- Enlace de teléfono -->
+  <p><a href="tel:+541112345678">Llamar por teléfono</a></p>
+  <!-- Enlace interno (ancla) -->
+  <p><a href="#top">Volver arriba</a></p>
 </section>
 
-<!-- ------------ IFRAME ------------------------- -->
+<!-- ========================================= -->
+<!--  SECCIÓN: IFRAME                          -->
+<!-- ========================================= -->
 <section>
-  <h2>Iframe</h2>
+  <!-- Título de la sección -->
+  <h2>Iframe (Marco integrado)</h2>
+  <!-- Iframe para incrustar otra página web -->
   <iframe
     src="https://www.example.com"
-    width="300"
-    height="200">
+    width="100%"
+    height="300"
+    title="Ejemplo de iframe"
+    style="border: 1px solid #ddd;">
   </iframe>
 </section>
 
-<!-- ------------ SVG ---------------------------- -->
+<!-- ========================================= -->
+<!--  SECCIÓN: SVG                             -->
+<!-- ========================================= -->
 <section>
-  <h2>SVG</h2>
-  <svg width="150" height="150">
-    <circle cx="75" cy="75" r="50" stroke="black" stroke-width="3" fill="lightblue"/>
+  <!-- Título de la sección -->
+  <h2>SVG (Gráficos Vectoriales)</h2>
+  <!-- Gráfico SVG con círculo -->
+  <svg width="200" height="200">
+    <!-- Círculo SVG -->
+    <circle cx="100" cy="100" r="80" stroke="black" stroke-width="3" fill="lightblue"/>
+    <!-- Texto dentro del SVG -->
+    <text x="100" y="105" text-anchor="middle" fill="black" font-size="16">SVG</text>
+  </svg>
+  
+  <!-- Rectángulo SVG -->
+  <svg width="200" height="100">
+    <rect width="200" height="100" fill="lightgreen" stroke="darkgreen" stroke-width="2"/>
   </svg>
 </section>
 
-<!-- ------------ DETALLES ----------------------- -->
+<!-- ========================================= -->
+<!--  SECCIÓN: DETALLES DESPLEGABLES           -->
+<!-- ========================================= -->
 <section>
+  <!-- Título de la sección -->
   <h2>Detalles desplegables</h2>
+  <!-- Elemento details para contenido expandible -->
   <details>
+    <!-- Resumen visible (título del desplegable) -->
     <summary>Haz clic para expandir</summary>
-    <p>Contenido oculto.</p>
+    <!-- Contenido oculto que se muestra al expandir -->
+    <p>Este es el contenido oculto que aparece cuando expandes el elemento.</p>
+    <p>Puedes incluir cualquier tipo de contenido HTML aquí.</p>
+  </details>
+  
+  <!-- Otro ejemplo de details abierto por defecto -->
+  <details open>
+    <summary>Este está abierto por defecto</summary>
+    <p>El atributo 'open' hace que este elemento esté expandido desde el inicio.</p>
   </details>
 </section>
 
-<!-- ------------ DIRECCIÓN ---------------------- -->
+<!-- ========================================= -->
+<!--  SECCIÓN: DIRECCIÓN                       -->
+<!-- ========================================= -->
 <section>
-  <h2>Dirección</h2>
+  <!-- Título de la sección -->
+  <h2>Dirección (Address)</h2>
+  <!-- Elemento address para información de contacto -->
   <address>
-    Autor: Juan Pérez<br>
-    Email: contacto&#64;example.com
+    <strong>Autor:</strong> Juan Pérez<br>
+    <strong>Email:</strong> <a href="mailto:contacto&#64;ejemplo.com">contacto&#64;ejemplo.com</a><br>
+    <strong>Teléfono:</strong> <a href="tel:+541112345678">+54 11 1234-5678</a><br>
+    <strong>Dirección:</strong> Av. Corrientes 1234, Buenos Aires, Argentina
   </address>
 </section>
 
-<!-- ------------ FIGURE ------------------------- -->
+<!-- ========================================= -->
+<!--  SECCIÓN: FIGURE                          -->
+<!-- ========================================= -->
 <section>
-  <h2>Figure</h2>
+  <!-- Título de la sección -->
+  <h2>Figure (Figura con descripción)</h2>
+  <!-- Elemento figure para imágenes con descripción -->
   <figure>
-    <img src="https://via.placeholder.com/200" alt="Imagen">
-    <figcaption>Ejemplo de figcaption</figcaption>
+    <!-- Imagen dentro del figure -->
+    <img src="https://via.placeholder.com/300x200" alt="Imagen de ejemplo">
+    <!-- Descripción de la imagen -->
+    <figcaption>Figura 1: Ejemplo de una imagen con descripción usando figcaption</figcaption>
   </figure>
 </section>
 
-<!-- ------------ PROGRESS ----------------------- -->
+<!-- ========================================= -->
+<!--  SECCIÓN: BARRAS DE PROGRESO Y MEDIDORES  -->
+<!-- ========================================= -->
 <section>
-  <h2>Barra de Progreso</h2>
-  <progress value="50" max="100"></progress>
+  <!-- Título de la sección -->
+  <h2>Barras de Progreso y Medidores</h2>
+  
+  <!-- Subtítulo para barra de progreso -->
+  <h3>Barra de Progreso</h3>
+  <!-- Barra de progreso al 50% -->
+  <label for="progressBar">Descarga: </label>
+  <progress id="progressBar" value="50" max="100">50%</progress>
+  <span> 50%</span>
+
+  <!-- Subtítulo para medidor -->
+  <h3>Medidor (Meter)</h3>
+  <!-- Medidor con valores óptimos y de advertencia -->
+  <label for="meter1">Nivel de batería: </label>
+  <meter id="meter1" min="0" max="100" low="25" high="75" optimum="90" value="70">70%</meter>
 </section>
 
-<!-- ------------ METER -------------------------- -->
+<!-- ========================================= -->
+<!--  SECCIÓN: ELEMENTOS ADICIONALES           -->
+<!-- ========================================= -->
 <section>
-  <h2>Medidor</h2>
-  <meter min="0" max="10" value="7">7/10</meter>
+  <!-- Título de la sección -->
+  <h2>Elementos Adicionales</h2>
+  
+  <!-- Elemento kbd para teclas de teclado -->
+  <p>Presiona <kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar</p>
+  
+  <!-- Elemento samp para salida de muestra -->
+  <p>Salida del programa: <samp>Error 404: Página no encontrada</samp></p>
+  
+  <!-- Elemento var para variables -->
+  <p>La fórmula del área del círculo es: <var>A</var> = π<var>r</var><sup>2</sup></p>
+  
+  <!-- Elemento time para fechas/horas -->
+  <p>El evento será el <time datetime="2025-12-25">25 de diciembre de 2025</time></p>
+  
+  <!-- Elemento output para resultados de cálculos -->
+  <p>Resultado del cálculo: <output name="result">42</output></p>
 </section>
 
-<!-- ------------ HR ----------------------------- -->
+<!-- ========================================= -->
+<!--  SECCIÓN: FIELDSET Y LEGEND               -->
+<!-- ========================================= -->
+<section>
+  <!-- Título de la sección -->
+  <h2>Fieldset y Legend (Agrupación de campos)</h2>
+  <!-- Fieldset para agrupar campos relacionados -->
+  <fieldset>
+    <!-- Leyenda del grupo de campos -->
+    <legend>Información Personal</legend>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido"><br><br>
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad">
+  </fieldset>
+</section>
+
+<!-- Línea horizontal para separar secciones -->
 <hr>
 
-<footer>
-  <p>Fin del documento de prueba.</p>
+<!-- ========================================= -->
+<!--  PIE DE PÁGINA                            -->
+<!-- ========================================= -->
+<footer style="text-align: center; padding: 20px; background-color: #333; color: white; margin-top: 20px;">
+  <!-- Texto del footer -->
+  <p>&copy; 2025 - Documento de práctica HTML para Angular</p>
+  <p>Este es un ejemplo completo de elementos HTML compatibles con Angular.</p>
 </footer>
